@@ -1,0 +1,12 @@
+<!--components/list/list.wxml-->
+<view class='hr' wx:if='{{topLine}}'></view>
+<view class='list' bindtap='listOnTap' bindlongtap='listOnLangTap'>
+  <view class='leftBlock'>
+    <view wx:for="{{array}}" wx:key="item" class='blank'></view>
+    <view>{{content}}</view>
+  </view>
+  
+  <view class='rightBlock' catchtap='arrowOnTap' wx:if='{{!noArrow}}'>></view>
+  <slot></slot>
+</view>
+<view class='hr' wx:if='{{bottomLine}}'></view>

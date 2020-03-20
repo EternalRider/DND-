@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/nameGenerator/nameGenerator",
+    "pages/me/me",
+    "pages/npcGenerator/npcGenerator",
+    "pages/setting/setting",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "NPC生成器",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#F6F6F6",
+    "selectedColor": "#424242",
+    "list": [
+      {
+        "pagePath": "pages/nameGenerator/nameGenerator",
+        "text": "随机名字",
+        "iconPath": "images/nameGenerator_icon.png",
+        "selectedIconPath": "images/nameGenerator_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/npcGenerator/npcGenerator",
+        "text": "随机特征",
+        "iconPath": "images/npcGenerator_icon.png",
+        "selectedIconPath": "images/npcGenerator_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me_icon.png",
+        "selectedIconPath": "images/me_icon_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

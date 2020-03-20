@@ -1,0 +1,22 @@
+/* components/list/list.wxss */
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx;
+  height: 50rpx
+}
+
+.hr {
+  background-color: gainsboro;
+  height: 5rpx;
+}
+
+.blank {
+  width: 50rpx;
+}
+
+.leftBlock {
+  display: flex;
+  flex-direction: row
+}

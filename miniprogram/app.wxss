@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+.hr {
+  background-color: gainsboro;
+  height: 5rpx;
+  width: 100%;
+}
+.blank {
+  height: 100rpx;
+}

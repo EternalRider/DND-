@@ -1,0 +1,10 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='container'>
+  <form class='form' bindsubmit='submitException'>
+    <view class='tittle'>标题：</view>
+    <input type='text' class='inputTittle' name="tittle"></input>
+    <view class='tittle'>详述：</view>
+    <textarea class='inputDescription' name="description"></textarea>
+    <button class='submitButton' form-type='submit'>提交反馈</button>
+  </form>
+</view>

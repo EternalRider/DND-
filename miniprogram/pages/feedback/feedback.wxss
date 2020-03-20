@@ -1,0 +1,11 @@
+/* pages/feedback/feedback.wxss */
+.inputTittle, .inputDescription, .submitButton{
+  margin: 20rpx;
+}
+.inputTittle, .inputDescription{
+  border:  1px solid #cccc;
+}
+.tittle{
+  margin: 20rpx;
+  font-weight: bold;
+}
