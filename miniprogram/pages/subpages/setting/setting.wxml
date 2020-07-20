@@ -1,0 +1,17 @@
+<!--pages/setting/setting.wxml-->
+<form bindsubmit='savePreferences'>
+  <list content="随机理想条数" bottomLine noArrow>
+    <input name="ideal" type='number' maxlength='1' value='{{ideal}}'></input>
+  </list>
+  <list content="随机牵绊条数" bottomLine noArrow>
+    <input name="bond" type='number' maxlength='1' value='{{bond}}'></input>
+  </list>
+  <list content="随机缺点条数" bottomLine noArrow>
+    <input name="flaw" type='number' maxlength='1' value='{{flaw}}'></input>
+  </list>
+  <list content="随机特点条数" bottomLine noArrow>
+    <input name="traits" type='number' maxlength='1' value='{{traits}}'></input>
+  </list>
+
+  <button form-type='submit'>保存设置</button>
+</form>

@@ -1,7 +1,10 @@
 //app.js
 App({
+  globalData: {
+    userInfo: null
+  },
+
   onLaunch: function () {
-    this.globalData = {}
     var app = this
     
     // 获取用户信息
@@ -59,5 +62,9 @@ App({
         }
       }
     })
-  }
+  },
+
+  setUserInfo: function(userInfo){
+    this.globalData.userInfo = userInfo;
+  },
 })

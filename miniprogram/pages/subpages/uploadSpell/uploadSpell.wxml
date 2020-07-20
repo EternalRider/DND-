@@ -1,0 +1,20 @@
+<!--pages/subpages/uploadSpell/uploadSpell.wxml-->
+<form class="create_containter" bindsubmit='submit_info'>
+  <view class="little_title">法术信息</view>
+  <view class="basicInfo_item">
+    <label for="name">名称：</label>
+    <view class="inputView"><input id="name" class="input" placeholder="法术的名称" placeholder-style="color: gray" name="name" /></view>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='details_item'>
+    <label for='description'>法术详述</label>
+    <textarea id='description' name="description" class="inputView" placeholder="法术的详细描述" placeholder-style="color: gray"></textarea>
+  </view>
+    
+  <view class='line'></view>
+
+  <button class="button" type="primary" form-type='submit'>提交</button>
+
+</form>

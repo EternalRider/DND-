@@ -6,7 +6,10 @@
     <view>{{content}}</view>
   </view>
   
-  <view class='rightBlock' catchtap='arrowOnTap' wx:if='{{!noArrow}}'>></view>
+  <view class='rightBlock'>
+    <view class="notice" style="background-color: {{noticeColor}};" wx:if='{{notice>0}}'>{{notice}}</view>
+    <view class="arrow" catchtap='arrowOnTap' wx:if='{{!noArrow}}'>></view>
+  </view>
   <slot></slot>
 </view>
 <view class='hr' wx:if='{{bottomLine}}'></view>

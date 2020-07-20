@@ -1,16 +1,20 @@
 {
   "pages": [
-    "pages/nameGenerator/nameGenerator",
+    "pages/index/index",
+    "pages/customize/customize",
     "pages/me/me",
-    "pages/npcGenerator/npcGenerator",
-    "pages/setting/setting",
-    "pages/feedback/feedback"
+
+    "pages/subpages/nameGenerator/nameGenerator",
+    "pages/subpages/npcGenerator/npcGenerator",
+    "pages/subpages/setting/setting",
+    
+    "pages/subpages/uploadSpell/uploadSpell"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "NPC生成器",
+    "navigationBarTitleText": "DND工具箱",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -18,14 +22,14 @@
     "selectedColor": "#424242",
     "list": [
       {
-        "pagePath": "pages/nameGenerator/nameGenerator",
-        "text": "随机名字",
+        "pagePath": "pages/index/index",
+        "text": "首页",
         "iconPath": "images/nameGenerator_icon.png",
         "selectedIconPath": "images/nameGenerator_icon_selected.png"
       },
       {
-        "pagePath": "pages/npcGenerator/npcGenerator",
-        "text": "随机特征",
+        "pagePath": "pages/customize/customize",
+        "text": "自定义",
         "iconPath": "images/npcGenerator_icon.png",
         "selectedIconPath": "images/npcGenerator_icon_selected.png"
       },

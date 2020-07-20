@@ -8,6 +8,14 @@ Component({
       type: String,
       value: ""
     },
+    notice: {
+      type: Number,
+      value: 0
+    },
+    noticeColor: {
+      type: String,
+      value: "#00FF00"
+    },
     topLine: {
       type: Boolean,
       value: false

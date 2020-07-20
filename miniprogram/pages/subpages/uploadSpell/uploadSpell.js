@@ -1,4 +1,4 @@
-// pages/feedback/feedback.js
+// pages/subpages/uploadSpell/uploadSpell.js
 Page({
 
   /**
@@ -9,31 +9,10 @@ Page({
   },
 
   /**
-   * 提交反馈
+   * 提交表单
    */
-  submitException: function(e){
-    var content = e.detail
-
-    wx.cloud.callFunction({
-      name: 'sendFeedback',
-      data: {
-        content: e.detail.value
-      },
-    })
-      .then(res => {
-        // console.log(res)
-        if (res.result.success == "success") {
-          //提示提交成功
-          wx.showToast({
-            title: '提交成功',
-            icon: 'success',
-            duration: 2000
-          })
-        }
-      })
-      .catch(err => {
-        console.log(err)
-      })
+  submit_info: function (e) {
+    
   },
 
   /**

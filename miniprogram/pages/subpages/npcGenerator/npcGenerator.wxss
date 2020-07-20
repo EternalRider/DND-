@@ -1,0 +1,25 @@
+/* pages/npcGenerator/npcGenerator.wxss */
+.title{
+  background-color: gainsboro;
+  color: gray;
+  padding: 5rpx;
+  width: 100%
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+label {
+  color: gray
+}
+.hand {
+  color: black;
+}
+button{
+  width: 100%
+}
+textarea{
+  height: 100rpx;
+  line-height: 50rpx;
+}

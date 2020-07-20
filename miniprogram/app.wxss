@@ -13,3 +13,8 @@
 .blank {
   height: 100rpx;
 }
+.greenline {
+  background-color: LimeGreen;
+  height: 1rpx;
+  width: 70%;
+}

@@ -1,0 +1,26 @@
+/* pages/subpages/uploadSpell/uploadSpell.wxss */
+.basicInfo_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  justify-content: space-between;
+}
+.little_title {
+  padding: 20rpx;
+  font-weight: bold;
+  color: white;
+  background-color: limegreen;
+}
+.button {
+  margin: 20rpx;
+}
+.input{
+  height: 20px;
+}
+.line{
+  height: 1px;
+  background-color: gainsboro;
+}
+.details_item{
+  margin: 20rpx;
+}

@@ -1,0 +1,51 @@
+/* pages/index/index.wxss */
+.pages{
+  margin: 20rpx;
+  border-width: 1rpx;
+  border-color: LimeGreen ;
+  border-style: solid;
+  border-radius: 20rpx;
+  height: 200rpx;
+  width: 710rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.pages .image{
+  margin: 20rpx;
+  border-radius: 20rpx;
+  height: 160rpx;
+  width: 200rpx;
+}
+
+image{
+  border-radius: 20rpx;
+  height: 160rpx;
+  width: 200rpx;
+}
+
+.rightContent{
+  margin: 20rpx;
+  border-radius: 20rpx;
+  height: 160rpx;
+  width: 450rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.pages .name{
+  margin: 10rpx 10rpx 0rpx;
+  font-weight: bold;
+
+}
+.pages .description{
+  margin: 10rpx;
+  font-size: small;
+  color: gray;
+}
+.title {
+  font-size: large;
+  font-weight: bold;
+  color: darkgray;
+  margin: 20rpx;
+}

@@ -29,3 +29,16 @@
   height: 15px;
   background-color: #F4F5F6;
 }
+.bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 750rpx;
+}
+.auth {
+  background-color: #F4F5F6;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 35px;
+  height: 35px;
+  top: 32px;
+}
