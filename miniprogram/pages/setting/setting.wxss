@@ -1,6 +1,0 @@
-/* pages/setting/setting.wxss */
-input {
-  position: absolute;
-  right: 20rpx;
-  width: 40rpx;
-}
