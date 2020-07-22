@@ -18,7 +18,9 @@ Page({
         description: "从相应背景的随机库中随机生成一个类5E背景的角色特征",
         image: "../../images/npcGenerator_icon_selected.png",
         path: "npcGenerator"
-      },
+      }
+    ],
+    pagesAdmin: [
       {
         name: "上传法术",
         description: "管理员上传官方的法术",

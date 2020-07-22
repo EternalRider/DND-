@@ -7,7 +7,7 @@
     "pages/subpages/nameGenerator/nameGenerator",
     "pages/subpages/npcGenerator/npcGenerator",
     "pages/subpages/setting/setting",
-    
+
     "pages/subpages/uploadSpell/uploadSpell"
   ],
   "window": {
@@ -41,5 +41,8 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

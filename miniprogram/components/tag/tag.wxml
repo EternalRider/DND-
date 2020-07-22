@@ -1,0 +1,6 @@
+<!--components/tag/tag.wxml-->
+<view class="tag" 
+style="border-color: {{color}};background-color: {{background}};" 
+bindtap='onTap'>
+{{content}}
+</view>

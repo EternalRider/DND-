@@ -1,20 +1,72 @@
 <!--pages/subpages/uploadSpell/uploadSpell.wxml-->
-<form class="create_containter" bindsubmit='submit_info'>
-  <view class="little_title">法术信息</view>
-  <view class="basicInfo_item">
-    <label for="name">名称：</label>
-    <view class="inputView"><input id="name" class="input" placeholder="法术的名称" placeholder-style="color: gray" name="name" /></view>
-  </view>
-
-  <view class='line'></view>
-
-  <view class='details_item'>
-    <label for='description'>法术详述</label>
-    <textarea id='description' name="description" class="inputView" placeholder="法术的详细描述" placeholder-style="color: gray"></textarea>
-  </view>
-    
-  <view class='line'></view>
-
-  <button class="button" type="primary" form-type='submit'>提交</button>
-
-</form>
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+<view class="page">
+<view class="page__bd">
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells title="基本信息">
+      <mp-cell prop="name" title="法术名称" ext-class="">
+        <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="法术名称，和原名一起贴"/>
+      </mp-cell>
+      <mp-cell title="法术环位" ext-class="picker" class="picker">
+        <picker bindchange="bindSpellLevelsChange" value="{{levelIndex}}" range="{{spellLevels}}">
+          <view class="weui-select">{{spellLevels[levelIndex]}}</view>
+        </picker>
+      </mp-cell>
+      <mp-cell title="法术学派" ext-class="picker" class="picker">
+        <picker bindchange="bindSpellSchoolsChange" value="{{schoolIndex}}" range="{{spellSchools}}">
+          <view class="weui-select">{{spellSchools[schoolIndex]}}</view>
+        </picker>
+      </mp-cell>
+      <mp-cell title="施法时间" ext-class="picker" class="picker">
+        <picker bindchange="bindCastingTimesChange" value="{{timeIndex}}" range="{{castingTimes}}">
+          <view class="weui-select">{{castingTimes[timeIndex]}}</view>
+        </picker>
+      </mp-cell>
+      <mp-cell prop="range" title="施法距离" ext-class="">
+        <input bindinput="formInputChange" data-field="range" class="weui-input" placeholder="自身 接触 X尺 X里"/>
+      </mp-cell>
+      <mp-cell prop="duration" title="持续时间" ext-class="">
+        <input bindinput="formInputChange" data-field="duration" class="weui-input" placeholder="立即 轮 分钟 小时 天"/>
+      </mp-cell>
+      <mp-cell title="出处" ext-class="picker" class="picker">
+        <picker bindchange="bindPubChange" value="{{pubIndex}}" range="{{publications}}">
+          <view class="weui-select">{{publications[pubIndex]}}</view>
+        </picker>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="法术成分">
+      <mp-checkbox-group prop="components" multi="{{true}}" bindchange="componentsChange">
+        <mp-checkbox label="声音V" value="verbal" checked="{{true}}" data-field="verbal" bindinputChange="formInputChange"></mp-checkbox>
+        <mp-checkbox label="姿势S" value="somatic" checked="{{true}}" data-field="somatic" bindinputChange="formInputChange"></mp-checkbox>
+        <mp-checkbox label="材料M" value="material" checked="{{true}}" data-field="material" bindinputChange="formInputChange" placeholder="请输入材料"></mp-checkbox>
+      </mp-checkbox-group>
+    </mp-cells>
+    <mp-cells title="所属职业">
+      <checkbox-group bindchange="checkboxChange" class="checkbox-group" data-field="classChoose">
+        <view wx:for="{{class}}" wx:key="item">
+          <label class="{{classChecked[index]?'checkbox checked':'checkbox'}}" bindtap='classCheckbox' data-index="{{index}}">
+            <checkbox value="{{item}}" checked="{{classChecked[index]}}"/>{{item}}
+          </label>
+        </view>
+      </checkbox-group>
+    </mp-cells>
+    <mp-cells title="法术内容" footer="特殊施法时间和私设所属职业请在法术内容里详细写出">
+      <mp-cell prop="content" ext-class="">
+        <textarea class="weui-textarea" maxlength="{{-1}}" placeholder="法术的详细效果" bindinput="formInputChange" data-field="content" style="height: 3.3em" />
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="标签-用于方便查询">
+      <checkbox-group bindchange="checkboxChange" class="checkbox-group" data-field="tagChoose">
+        <view wx:for="{{tag}}" wx:key="item">
+          <label class="{{tagChecked[index]?'checkbox checked':'checkbox'}}" bindtap='tagCheckbox' data-index="{{index}}">
+            <checkbox value="{{item}}" checked="{{tagChecked[index]}}"/>{{item}}
+          </label>
+        </view>
+      </checkbox-group>
+    </mp-cells>
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+    </view>
+  </mp-form>
+</view>
+</view>

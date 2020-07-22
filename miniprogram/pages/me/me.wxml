@@ -18,8 +18,12 @@
 
 <view class='panel'>
   <!-- <list content="使用介绍" bottomLine></list> -->
-  <list content="偏好设置" bindtaplist="toSet" bottomLine></list>
+  <!-- <list content="偏好设置" bindtaplist="toSet" bottomLine></list> -->
   <!-- <list content="提交反馈" bindtaplist="toFeedback" bottomLine></list> -->
+
+  <mp-cells ext-class="my-cells">
+    <mp-cell value="偏好设置" footer=">" bindtap="toSet"></mp-cell>
+  </mp-cells>
 </view>
 
 <view class="bottom">

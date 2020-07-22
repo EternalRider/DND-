@@ -1,26 +1,36 @@
 /* pages/subpages/uploadSpell/uploadSpell.wxss */
-.basicInfo_item {
-  display: flex;
-  flex-direction: row;
-  margin: 20rpx;
-  justify-content: space-between;
-}
-.little_title {
-  padding: 20rpx;
-  font-weight: bold;
-  color: white;
-  background-color: limegreen;
-}
-.button {
-  margin: 20rpx;
-}
-.input{
+.picker {
   height: 20px;
 }
-.line{
-  height: 1px;
-  background-color: gainsboro;
+.components {
+  display: flex;
 }
-.details_item{
-  margin: 20rpx;
+.components mp-cell {
+  left: 100px;
+}
+.checkbox{
+  flex: 1;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  color: #888888;
+  border: 1rpx solid #CECECE;
+  border-radius: 5rpx;
+  /* display: inline-block; */
+  margin: 10rpx 20rpx;
+  padding: 20rpx;
+  /* position: relative; */
+}
+.checkbox-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.checked{
+  color: #3eace2;
+  background: rgba(49,165,253,0.08);
+  border: 1rpx solid #3eace2;
+}
+.checkbox checkbox{
+  display: none
 }
