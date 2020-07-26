@@ -2,6 +2,7 @@
   "usingComponents": {
     "list":"../../components/list/list",
     "mp-cell": "/weui-miniprogram/cell/cell",
-    "mp-cells": "/weui-miniprogram/cells/cells"
+    "mp-cells": "/weui-miniprogram/cells/cells",
+    "mp-halfScreenDialog": "/weui-miniprogram/half-screen-dialog/half-screen-dialog"
   }
 }

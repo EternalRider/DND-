@@ -1,0 +1,8 @@
+<!--pages/subpages/searchSpell/searchSpell.wxml-->
+<view class="page container">
+  <view class="title">查询法术</view>
+  <view class="greenline" style="margin:0rpx 0rpx 20rpx"></view>
+</view>
+<view class="searchbar">
+  <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>

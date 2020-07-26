@@ -23,8 +23,14 @@
 
   <mp-cells ext-class="my-cells">
     <mp-cell value="偏好设置" footer=">" bindtap="toSet"></mp-cell>
+    <mp-cell value="修改昵称" footer=">" bindtap="toNick"></mp-cell>
+    <mp-cell value="上传法术" wx:if="{{userType == '管理员'}}" footer=">" bindtap="toUpload"></mp-cell>
   </mp-cells>
 </view>
+
+<mp-halfScreenDialog bindbuttontap="changeNickBtn" show="{{changeNickShow}}" maskClosable="{{true}}" buttons="{{HSDbuttons}}">
+  <input slot="desc" bindinput="formInputChange" data-field="nickName" class="weui-input" placeholder="请输入新昵称"/>
+</mp-halfScreenDialog>
 
 <view class="bottom">
   <button open-type="feedback">意见反馈</button>

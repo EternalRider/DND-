@@ -1,4 +1,5 @@
 // pages/index/index.js
+const app = getApp();
 Page({
 
   /**
@@ -7,6 +8,12 @@ Page({
    */
   data: {
     pages:[
+      {
+        name: "查询法术",
+        description: "搜索查询想要的法术详述",
+        image: "../../images/nameGenerator_icon_selected.png",
+        path: "searchSpell"
+      },
       {
         name: "随机名字",
         description: "从相应种族的名字库中随机一些名字",
@@ -18,14 +25,6 @@ Page({
         description: "从相应背景的随机库中随机生成一个类5E背景的角色特征",
         image: "../../images/npcGenerator_icon_selected.png",
         path: "npcGenerator"
-      }
-    ],
-    pagesAdmin: [
-      {
-        name: "上传法术",
-        description: "管理员上传官方的法术",
-        image: "../../images/npcGenerator_icon_selected.png",
-        path: "uploadSpell"
       }
     ]
   },
@@ -44,7 +43,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

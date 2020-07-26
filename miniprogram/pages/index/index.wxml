@@ -12,13 +12,4 @@
       <view class="description">{{item.description}}</view>
     </view>
   </view>
-  <view class="pages" wx:for="{{pagesAdmin}}" wx:if="{{true}}" wx:key="key" data-path="{{item.path}}" bindtap="toPage">
-    <view class="image">
-      <image src="{{item.image}}"></image>
-    </view>
-    <view class="rightContent">
-      <view class="name">{{item.name}}</view>
-      <view class="description">{{item.description}}</view>
-    </view>
-  </view>
 </view>

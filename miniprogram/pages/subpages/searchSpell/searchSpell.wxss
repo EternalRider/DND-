@@ -1,0 +1,10 @@
+/* pages/subpages/searchSpell/searchSpell.wxss */
+.searchbar {
+  margin: 20rpx 0rpx;
+}
+.title {
+  font-size: large;
+  font-weight: bold;
+  color: darkgray;
+  margin: 20rpx;
+}
